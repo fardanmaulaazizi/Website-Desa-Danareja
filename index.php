@@ -1,67 +1,7 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website Desa Danareja</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Chart JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
-
-<body class="bg-warna-1">
-    <nav class="navbar navbar-expand-sm bg-warna-2 fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-white" href="#">Danareja</a>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item text-white dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Profil Desa
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Tentang Desa</a></li>
-                            <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
-                            <li><a class="dropdown-item" href="#">Perangkat Desa</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Berita
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pengumuman</a></li>
-                            <li><a class="dropdown-item" href="#">Agenda</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#">Galeri</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <button class="btn btn-primary roundeed" type="submit">Login</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    <?php
+    include 'partials/header.php';
+    include 'partials/navbar.php'
+    ?>
     <!-- Home -->
     <section id="hero" class="px-5">
         <div class="container vh-100 d-flex align-items-center">
@@ -108,7 +48,7 @@
     <!-- Akhir Sambutan -->
 
     <!-- Pengumuman -->
-    <section class="px-5 mb-5">
+    <section class="px-5 mb-5 min-vh-100">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-12">
@@ -137,7 +77,7 @@
     </section>
     <!-- Akhir Pengumuman -->
     <!-- Agenda -->
-    <section class="px-5 mt-5 mb-5">
+    <section class="px-5 mt-5 mb-5 min-vh-100">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-12">
@@ -164,7 +104,7 @@
     <!-- Akhir Agenda -->
 
     <!-- Info Desa -->
-    <section class="px-5 mt-5 mb-5">
+    <section class="px-5 mt-5 mb-5 min-vh-100">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-12">
@@ -211,42 +151,9 @@
     <!-- Akhir Info Desa -->
 
     <!-- Footer -->
-    <section class="bg-warna-2 text-white px-5 px-md-0">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-6 pe-md-5">
-                    <h6 class="fw-bold">Balai Desa Danareja</h6>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.3600929215113!2d109.1551794!3d-7.0841876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f94efabe1eb31%3A0x35df7c0d6220bbb3!2sBalai%20Desa%20Danareja!5e0!3m2!1sid!2sid!4v1689748616622!5m2!1sid!2sid" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-6 ps-md-5 mt-3 mt-md-0">
-                    <h6 class="fw-bold">Kontak Kami</h6>
-                    <p>Ciranggem, Danareja, Kec. Balapulang, Kabupaten Tegal, Jawa Tengah 52464</p>
-                    <h6 class="fw-bold">Hubungi Kami</h6>
-                    <form action="">
-                        <div class="mb-3">
-                            <label for="nama-anda" class="form-label">Nama Anda <span style="color: red;">*</span></label>
-                            <input type="text" id="nama-anda" class="form-control" name="namaAnda" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email <span style="color: red;">*</span></label>
-                            <input type="email" id="email" class="form-control" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Pesan <span style="color: red;">*</span></label>
-                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <hr>
-                    <h6 class="text-center">Copyright © 2023 All rights reserved.</h6>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    include 'partials/footer.php'
+    ?>
     <!-- Akhir Footer -->
 
     <!-- Statistik Penduduk -->
@@ -275,6 +182,6 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    </body>
 
-</html>
+    </html>
