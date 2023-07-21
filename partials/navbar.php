@@ -14,18 +14,19 @@
                         Profil Desa
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Tentang Desa</a></li>
+                        <li><a class="dropdown-item" href="tentangdesa.php">Tentang Desa</a></li>
                         <li><a class="dropdown-item" href="visimisi.php">Visi dan Misi</a></li>
-                        <li><a class="dropdown-item" href="#">Perangkat Desa</a></li>
+                        <li><a class="dropdown-item" href="perangkatdesa.php">Perangkat Desa</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Berita
+                        Informasi Desa
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Pengumuman</a></li>
                         <li><a class="dropdown-item" href="#">Agenda</a></li>
+                        <li><a class="dropdown-item" href="#">Download</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -70,7 +71,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#">Galeri</a>
+                    <a class="nav-link text-white" href="galeri.php">Galeri</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">

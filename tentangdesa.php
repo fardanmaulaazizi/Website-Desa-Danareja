@@ -3,8 +3,8 @@
     include 'partials/navbar.php'
     ?>
     <!-- Home -->
-    <section id="hero" class="px-5 mb-5">
-        <div class="container min-vh-100 pt-5">
+    <section id="hero" class="px-5">
+        <div class="container min-vh-100 py-5">
             <div class="row">
                 <div class="navigasi mb-3">
                     <i class="bi bi-house-door-fill text-primary"></i> <a href="index.php">Beranda</a> > <a href="#">Tentang Desa</a>
@@ -24,33 +24,3 @@
     include 'partials/footer.php'
     ?>
     <!-- Akhir Footer -->
-
-    <!-- Statistik Penduduk -->
-    <script>
-        var xValues = ["Laki-laki", "Perempuan"];
-        var yValues = [70, 80, 0];
-        var barColors = ["#181230", "#"];
-
-        new Chart("myChart", {
-            type: "bar",
-            data: {
-                labels: xValues,
-                datasets: [{
-                    backgroundColor: barColors,
-                    data: yValues
-                }]
-            },
-            options: {
-                legend: {
-                    display: false
-                },
-                title: {
-                    display: true,
-                }
-            }
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    </body>
-
-    </html>
